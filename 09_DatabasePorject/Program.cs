@@ -29,7 +29,7 @@ namespace _09_DatabasePorject
             Console.Write("-------------------------------------------");
 
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-UGIR0F4\\SQLEXPRESS;initial Catalog=EgitimKampiDb;integrated security=true");
-            connection.Open();
+            connection.Open();  //beliritlen data source adresinden secilen veritabanı
             SqlCommand command = new SqlCommand("select * From TblCategory",connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable dataTable = new DataTable();
